@@ -4,178 +4,301 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EmmaKolade || Home Page</title>
-    <!-- favicon -->
-    <link rel="favicon" href="./assests/favicon.ico" type="image/x-icon" />
-    <!-- font awesome icons -->
-    <link
+    <title>EmmaKolade | Home</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- font aweseome icon cdn link -->
+    <script src="https://kit.fontawesome.com/21fe399584.js" crossorigin="anonymous"></script>
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- end of font awesome icons -->
-    <!-- css- normalize and main -->
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    /> -->
   </head>
   <body>
-    <!-- nav bar -->
-    <nav class="navbar">
-      <div class="nav-center">
-        <div class="nav-header">
-          <a href="index.html" class="nav-logo"
-            ><img src="./assests/EmmaKolade logo.png" alt="EmmaKolade Logo"
-          /></a>
-        </div>
-        <div class="nav-links">
-          <a href="index.html" class="nav-link">home</a>
-          <a href="men.html" class="nav-link">men</a>
-          <a href="women.html" class="nav-link">women</a>
-          <a href="slippers.html" class="nav-link">slippers & sandals</a>
-          <a href="store.html" class="nav-link">store</a>
-          <!-- font awseome icon is wrapped in a div and also a link so as to navigate to the the cart page -->
-          <div class="nav-link">
-            <a href="login.html">login/signup</a>
-            <a href="cart.html"
-              ><i class="fa fa-shopping-cart f-icon">cart</i></a
-            >
+    <!-- header section -->
+    <section id="header">
+      <a href="#"
+        ><img src="/assests/EmmaKolade Logo New.png" class="logo" alt="Logo"
+      /></a>
+      <!-- nav links -->
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Men & Women</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+          <!-- <li><a href="cart.html" class="cart"><i class="fa fa-shopping-cart"></i></a></li> -->
+        </ul>
+      </div>
+      <!-- end of nav links -->
+    </section>
+    <!-- end of header section  -->
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero-container">
+        <h4>Shop The Best Offer</h4>
+        <h2>Great Prices, Great Deals</h2>
+        <h1>On every Items</h1>
+        <p>shop now and save more</p>
+        <button class="hero-btn">Shop Now</button>
+      </div>
+    </section>
+    <!-- end of hero section -->
+    <!-- features -->
+    <section id="feature" class="feature-section">
+      <div class="box">
+        <img src="./assests/features/f1-clearance sale.png" alt="" />
+        <h6>Clearance Sale</h6>
+      </div>
+      <div class="box">
+        <img src="./assests/features/f2-free-shipping.png" alt="" />
+        <h6>Free Shipping</h6>
+      </div>
+      <div class="box">
+        <img src="./assests/features/f4-order tracking.png" alt="" />
+        <h6>Order Tracking</h6>
+      </div>
+      <div class="box">
+        <img src="./assests/features/f3-buy-one-get-one-free.png" alt="" />
+        <h6>Get One Free</h6>
+      </div>
+      <div class="box">
+        <img src="./assests/features/f5-coupons.png" alt="" />
+        <h6>Coupons</h6>
+      </div>
+      <div class="box">
+        <img src="./assests/features/f6-customer-service.png" alt="" />
+        <h6>Customer Service</h6>
+      </div>
+    </section>
+    <!-- end of features -->
+    <!-- product section -->
+    <section id="product" class="feature-section">
+      <h2>COLLECTIONS</h2>
+      <p>Collections for Men and Women</p>
+      <div class="product-container">
+        <div class="pro">
+          <img src="/assests/products/f1.jpg" alt="product 1" />
+          <!-- product description -->
+          <div class="des">
+            <span>adidas</span>
+            <h5>vintage shirt</h5>
+            <div class="reviews-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price-tag">&#8358 500</h4>
           </div>
+          <!-- end of product description -->
+          <a href="#"><i class="fa-solid fa-cart-arrow-down product-cart"></i></a>
         </div>
-      </div>
-    </nav>
-    <!-- end of nav bar -->
-    <!-- main page -->
-    <main class="page">
-      <!-- slider  -->
-      <div class="slider">
-        <span id="slide-1"></span>
-        <span id="slide-2"></span>
-        <span id="slide-3"></span>
-        <span id="slide-4"></span>
-        <div class="image-container">
-          <img
-            src="./assests/slider images/slide1.jpg"
-            class="slide"
-            alt="suede slippers"
-          />
-          <img
-            src="./assests/slider images/slide2.jpeg"
-            class="slide"
-            alt="slippers"
-          />
-          <img
-            src="./assests/slider images/slide3.jpeg"
-            class="slide"
-            alt="slippers"
-          />
-          <img
-            src="./assests/slider images/slide4.jpeg"
-            class="slide"
-            alt="slippers"
-          />
-          <div class="buttons">
-            <a href="store.html">slide-1</a>
-            <a href="store.html">slide-2</a>
-            <a href="store.html">slide-3</a>
-            <a href="store.html">slide-4</a>
+        <div class="pro">
+          <img src="/assests/products/f2.jpg" alt="product 1" />
+          <!-- product description -->
+          <div class="des">
+            <span>adidas</span>
+            <h5>vintage shirt</h5>
+            <div class="reviews-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price-tag">&#8358 500</h4>
           </div>
+          <!-- end of product description -->
+          <a href="#"><i class="fa-solid fa-cart-arrow-down product-cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="/assests/products/f3.jpg" alt="product 1" />
+          <!-- product description -->
+          <div class="des">
+            <span>adidas</span>
+            <h5>vintage shirt</h5>
+            <div class="reviews-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price-tag">&#8358 500</h4>
+          </div>
+          <!-- end of product description -->
+          <a href="#"><i class="fa-solid fa-cart-arrow-down product-cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="/assests/products/f4.jpg" alt="product 1" />
+          <!-- product description -->
+          <div class="des">
+            <span>adidas</span>
+            <h5>vintage shirt</h5>
+            <div class="reviews-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price-tag">&#8358 500</h4>
+          </div>
+          <!-- end of product description -->
+          <a href="#"><i class="fa-solid fa-cart-arrow-down product-cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="/assests/products/f5.jpg" alt="product 1" />
+          <!-- product description -->
+          <div class="des">
+            <span>adidas</span>
+            <h5>vintage shirt</h5>
+            <div class="reviews-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price-tag">&#8358 500</h4>
+          </div>
+          <!-- end of product description -->
+          <a href="#"><i class="fa-solid fa-cart-arrow-down product-cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="/assests/products/f6.jpg" alt="product 1" />
+          <!-- product description -->
+          <div class="des">
+            <span>adidas</span>
+            <h5>vintage shirt</h5>
+            <div class="reviews-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price-tag">&#8358 500</h4>
+          </div>
+          <!-- end of product description -->
+          <a href="#"><i class="fa-solid fa-cart-arrow-down product-cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="/assests/products/f7.jpg" alt="product 1" />
+          <!-- product description -->
+          <div class="des">
+            <span>adidas</span>
+            <h5>vintage shirt</h5>
+            <div class="reviews-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price-tag">&#8358 500</h4>
+          </div>
+          <!-- end of product description -->
+          <a href="#"><i class="fa-solid fa-cart-arrow-down product-cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="/assests/products/f8.jpg" alt="product 1" />
+          <!-- product description -->
+          <div class="des">
+            <span>adidas</span>
+            <h5>vintage shirt</h5>
+            <div class="reviews-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price-tag">&#8358 500</h4>
+          </div>
+          <!-- end of product description -->
+          <a href="#"><i class="fa-solid fa-cart-arrow-down product-cart"></i></a>
         </div>
       </div>
-      <!-- end of slider -->
-      <!-- list of products -->
-      <div class="product-list">
-        <!-- product 1 -->
-        <a href="men.html" class="products"
-          ><img src="./assests/products/man shop now.jpg" alt="men shop now" />
-          <h2>shop now</h2>
-          <h1>mens wear</h1>
-        </a>
-        <!-- end of product 1 -->
-        <!-- product 2 -->
-        <a href="women.html" class="products"
-          ><img
-            src="./assests/products/woman shop now.jpg"
-            alt="women shop now"
-          />
-          <h2>shop now</h2>
-          <h1>womens wear</h1>
-        </a>
-        <!-- end of product 2 -->
-        <!-- product 3 -->
-        <a href="store.html" class="products"
-          ><img
-            src="./assests/products/man&woman.jpg"
-            alt="women and men shop now"
-          />
-          <h2>shop now</h2>
-          <h1>men and women classic store</h1>
-        </a>
-        <!-- end of product 3 -->
-        <!-- product 4 -->
-        <a href="store.html" class="products"
-          ><img
-            src="./assests/products/slippers and sandal.jpg"
-            alt="women and men shop now"
-          />
-          <h2>shop now</h2>
-          <h1>slippers and sandals</h1>
-        </a>
-        <!-- end of product 3 -->
-      </div>
-      <!-- end of products -->
-      <!-- newsletter form -->
-      <form action="#">
-        <div class="form-container">
-          <h2>EmmaKolade Newsletter</h2>
-          <p>signup to get updates on our new arrivals</p>
+    </section>
+    <!-- end of product section -->
+<!-- two pictures  -->
+<section id="banner" class="feature-section">
+  <div class="banner-shop">
+    <h4>VIEW NOW</h4>
+  <h1>WOMEN</h1>
+  </div>
+  <div class="banner-shop men">
+    <h4>VIEW NOW</h4>
+  <h1>MEN</h1>
+  </div>
+  <!-- <div class="banner-container">
+    <div class="banner-shop">
+        <div class="men-women">
+          <img src="./assests/products/woman shop now.jpg" alt="">
+          <div class="banner-description">
+        <h4>View Now</h4>
+        <h1>WOMEN</h1>
         </div>
-        <div class="form-container">
-          <input
-            type="text"
-            placeholder="Email Address"
-            name="email"
-            required
-          />
-          <label>
-            <input type="checkbox" checked="checked" name="subscribe" />weekly
-            newsletter
-          </label>
         </div>
-        <div class="form-container">
-          <input type="submit" value="subscribe" />
+    </div>
+    <div class="banner-shop">
+        <div class="men-women">
+          <img src="./assests/products/man shop now.jpg" alt="">
+          <div class="banner-description">
+        <h4>View Now</h4>
+        <h1>MEN</h1>
         </div>
-      </form>
-      <!-- end of newsletter form -->
-      <!-- customer service, company section-->
-      <section class="section">
-        <div class="section-nav">
-          <h1 class="section-list">customer service</h1>
-          <a href="#" class="section-link">contact-us</a>
-          <a href="#" class="section-link">shipping and returns</a>
-          <h1 class="section-list">the company</h1>
-          <a href="#" class="section-link">about emmakolade</a>
-          <a href="#" class="section-link">privacy policy</a>
-          <h1 class="section-list">we're here for you</h1>
-          <p>
-            Follow us to discover new collections, fresh arrivals, and exclusive
-            offers.
-          </p>
-          <a href="https://facebook.com/emmkolade" class="f-icon"
-            ><i class="fa fa-facebook-f"></i
-          ></a>
-          <a href="https://twitter.com/emmakolade" class="f-icon"
-            ><i class="fa fa-twitter"></i
-          ></a>
-          <a href="http://instagram.com/emmakolade" class="f-icon"
-            ><i class="fa fa-instagram"></i
-          ></a>
         </div>
-      </section>
-      <!-- end of customer and company section -->
-    </main>
-    <!-- end of main page -->
-    <footer class="page-footer">
-      <p>&copy; EMMAKOLADE <span>|privacy policy|</span></p>
-      <p>Made in Nigeria</p>
-    </footer>
+    </div>
+  </div> -->
+
+</section>
+<!-- <section id="banner">
+  <div class="banner-container">
+  <div class="shop-now">
+    <img src="./assests/products/woman shop now.jpg" alt="women shop now">
+    <h5>View Now</h5>
+    <h2>Women</h2>
+  </div>
+  <div class="shop-now">
+    <img src="./assests/products/man shop now.jpg" alt="Men shop now">
+    <h5>View Now</h5>
+    <h2>Men</h2>
+  </div>
+  </div>
+</section> -->
+<!-- end of two pictures -->
+<section id="sm-banner" class="feature-section">
+  <div class="banner-box">
+    <h4>crazy deals</h4>
+    <h2>buy i get 1 free</h2>
+    <span>the best classic dress in son sale at EmmaKolade</span>
+    <button class="banner-btn"> check now</button>
+  </div>
+  <div class="banner-box box2">
+    <h4>crazy deals</h4>
+    <h2>buy i get 1 free</h2>
+    <span>the best classic dress is on sale at EmmaKolade</span>
+    <button class="banner-btn"> check now</button>
+  </div>
+</section>
+<!-- newsletter signup -->
+<section id="newsletter">
+  <div class="newstext">
+    <h4>EmmaKolade Newsletter</h4>
+    <p>signup to recieve the latest on emmakolade news and updates</p>
+  </div>
+  <div class="signup">
+    <input type="text" placeholder="emmail address">
+    <button>Sign Up</button>
+  </div>
+</section>
+<!-- end of newsletter signup -->
+    <script src="script.js"></script>
   </body>
 </html>

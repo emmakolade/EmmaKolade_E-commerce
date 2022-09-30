@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmmaKolade || Home Page</title>
+    <!-- favicon -->
+    <link rel="favicon" href="./assests/favicon.ico" type="image/x-icon" />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/791566d1cb.js" crossorigin="anonymous"></script>
+    <!-- end of font awesome icons -->
+    <!-- css- normalize and main -->
+    <link rel="stylesheet" href="./css/normalize.ccs" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo"
+            ><img src="./assests/EmmaKolade Logo New.png" alt="EmmaKolade Logo"
+          /></a>
+          <a href="login.html" class="login">login/signup</a>
+          <a href="cart.html"><i class="fa fa-shopping-cart">cart</i></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">home</a>
+          <a href="men.html" class="nav-link">men</a>
+          <a href="women.html" class="nav-link">women</a>
+          <a href="slippers.html" class="nav-link">slippers & sandals</a>
+          <a href="store.html" class="nav-link">store</a>
+          <!-- font awseome icon is wrapped in a div and also a link so as to navigate to the the cart page -->
+          <div class="f-icon">></div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav bar -->
+    <!-- main page -->
+    <main class="page">
+      <!-- slider  -->
+      <!-- <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <span id="slide-4"></span>
+        <div class="image-container">
+          <img
+            src="./assests/slider images/slide1.jpg"
+            class="slide"
+            alt="suede slippers"
+          />
+          <img
+            src="./assests/slider images/slide2.jpeg"
+            class="slide"
+            alt="slippers"
+          />
+          <img
+            src="./assests/slider images/slide3.jpeg"
+            class="slide"
+            alt="slippers"
+          />
+          <img
+            src="./assests/slider images/slide4.jpeg"
+            class="slide"
+            alt="slippers"
+          />
+          <div class="buttons">
+            <a href="store.html">slide-1</a>
+            <a href="store.html">slide-2</a>
+            <a href="store.html">slide-3</a>
+            <a href="store.html">slide-4</a>
+          </div>
+        </div>
+      </div>
+      end of slider -->
+      <!-- list of products -->
+      <div class="product-list">
+        <!-- product 1 -->
+        <a href="men.html" class="products"
+          ><img src="./assests/products/man shop now.jpg" alt="men shop now" />
+          <h2>shop now</h2>
+          <h1>mens wear</h1>
+        </a>
+        <!-- end of product 1 -->
+        <!-- product 2 -->
+        <a href="women.html" class="products"
+          ><img
+            src="./assests/products/woman shop now.jpg"
+            alt="women shop now"
+          />
+          <h2>shop now</h2>
+          <h1>womens wear</h1>
+        </a>
+        <!-- end of product 2 -->
+        <!-- product 3 -->
+        <a href="store.html" class="products"
+          ><img
+            src="./assests/products/man&woman.jpg"
+            alt="women and men shop now"
+          />
+          <h2>shop now</h2>
+          <h1>men and women classic store</h1>
+        </a>
+        <!-- end of product 3 -->
+        <!-- product 4 -->
+        <a href="store.html" class="products"
+          ><img
+            src="./assests/products/slippers and sandal.jpg"
+            alt="women and men shop now"
+          />
+          <h2>shop now</h2>
+          <h1>slippers and sandals</h1>
+        </a>
+        <!-- end of product 3 -->
+      </div>
+      <!-- end of products -->
+      <!-- newsletter form -->
+      <form action="#">
+        <div class="form-container">
+          <h2>EmmaKolade Newsletter</h2>
+          <p>signup to get updates on our new arrivals</p>
+        </div>
+        <div class="form-container">
+          <input
+            type="text"
+            placeholder="Email Address"
+            name="email"
+            required
+          />
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe" />weekly
+            newsletter
+          </label>
+        </div>
+        <div class="form-container">
+          <input type="submit" value="subscribe" />
+        </div>
+      </form>
+      <!-- end of newsletter form -->
+      <!-- customer service, company section-->
+      <section class="section">
+        <div class="section-nav">
+          <h1 class="section-list">customer service</h1>
+          <a href="#" class="section-link">contact-us</a>
+          <a href="#" class="section-link">shipping and returns</a>
+          <h1 class="section-list">the company</h1>
+          <a href="#" class="section-link">about emmakolade</a>
+          <a href="#" class="section-link">privacy policy</a>
+          <h1 class="section-list">we're here for you</h1>
+          <p>
+            Follow us to discover new collections, fresh arrivals, and exclusive
+            offers.
+          </p>
+          <a href="https://facebook.com/emmkolade" class="f-icon"
+            ><i class="fa fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/emmakolade" class="f-icon"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="http://instagram.com/emmakolade" class="f-icon"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </div>
+      </section>
+      <!-- end of customer and company section -->
+    </main>
+    <!-- end of main page -->
+    <footer class="page-footer">
+      <p>&copy; EMMAKOLADE <span>|privacy policy|</span></p>
+      <p>Made in Nigeria</p>
+    </footer>
+  </body>
+</html>
