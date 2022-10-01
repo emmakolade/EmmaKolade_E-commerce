@@ -402,8 +402,35 @@ background: #088178;
   flex-wrap: wrap;
   align-items: center;
   background-image: url("/assests/b14.png");
-  background-color: #000000;
+  background-color: rgb(37, 37, 37);
   background-repeat: no-repeat;
   background-position: 20% 30%;
+
+}
+
+#newsletter h4 {
+font-size: 20px;
+font-weight: 600;
+color: #fff;
+}
+#newsletter p {
+font-size: 13px;
+font-weight: 100;
+}
+#newsletter .form{
+  display: flex;
+  width: 40%;
+}
+#newsletter input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid green;
+  border-radius: 4px;
+  outline: none;
+}
+#newsletter button {
+
 }
 /* end of newsletter */
