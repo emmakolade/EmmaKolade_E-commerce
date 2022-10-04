@@ -53,7 +53,7 @@
 #feature .box:nth-child(6) h6 {
   background-color: #013220;
 }
-/* products */
+/* collections */
 #product {
   text-align: center;
 }
@@ -134,3 +134,16 @@
   align-items: flex-end;
   justify-content: center;
 } */
+.reviews-star {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+/*#product .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}*/
+/*#product .pro .des span {
+  color: #fa5b3d;
+  font-size: 12px;
+}*/

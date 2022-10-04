@@ -89,14 +89,20 @@ body {
   bottom: -3px;
   left: 40px;
 }
-/* home page */
-
+#mobile {
+  display: none;
+  align-items: center;
+}
+#close-side {
+  display: none;
+}
 /* hero container */
 .hero {
   height: 90vh;
   position: relative;
   margin: 0px 30px;
-  background: url("/assests/Hero.jpeg") center/cover no-repeat;
+  background: url("/assests/products/mohammad-metri-E-0ON3VGrBc-unsplash.jpg")
+    center/cover no-repeat;
 }
 .hero-container {
   position: absolute;
@@ -157,6 +163,75 @@ body {
   color: darkgrey;
 }
 /* end of hero container */
+
+/* collections */
+#product {
+  text-align: center;
+}
+#product .product-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#product .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px; /*top&bottom left&right */
+  /* border: 1px solid rgba(70, 62, 221, 0.4); */
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 20px 20px 54px rgba(70, 62, 221, 0.1); /* x, y, radius rgba */
+  margin: 15px 0;
+  transition: 0.7s ease-in-out;
+  position: relative;
+}
+#product .pro:hover {
+  box-shadow: 20px 20px 54px rgba(70, 62, 221, 0.3); /* x, y, radius rgba */
+}
+#product .pro img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#product .pro .des h5 {
+  padding-top: 7px;
+  color: #414a4c;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.price-tag {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: darkgrey;
+}
+.product-cart {
+  margin-top: 15px;
+  color: #414a4c;
+  font-size: 30px;
+
+}
+
+.pagination{
+  text-decoration: none;
+  
+  padding-top: 0;
+  padding-bottom: 30px;
+  
+  font-size: 700;
+
+  text-align: center;
+  font-size: 30px;
+
+}
+.pagination a i{
+  color: black;
+  
+  padding: 0px 10px;
+}
+/*end of collections*/
+
 /* banner men&women */
 #banner {
   display: flex;
@@ -177,7 +252,7 @@ body {
 #banner .men {
   background-image: url("/assests/products/man.jpg");
 }
-/* end of banner men and women  */
+/* end of banner men&women  */
 
 /* small banner */
 #sm-banner {
@@ -192,7 +267,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("/assests/products/b17.jpg");
+  background-image: url("/assests/products/menglasses.webp");
   min-width: 905px;
   height: 50vh;
   background-size: cover;
@@ -200,7 +275,7 @@ body {
   padding: 30px;
 }
 #sm-banner .box2 {
-  background-image: url("/assests/products/b10.jpg");
+  background-image: url("/assests/products/womenglasses.webp");
 }
 #sm-banner h4 {
   color: white;
@@ -240,7 +315,7 @@ body {
 /* end of small banner */
 
 /* newsletter  */
-#newsletter {
+.newsletter {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -248,37 +323,53 @@ body {
   background-color: rgb(37, 37, 37);
   padding: 0px 0px;
   margin: 0px 30px;
+  border-radius: 3px;
+}
+.newstext {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: border-box;
 }
 
-#newsletter h4 {
-  font-size: 20px;
+.newsletter h4 {
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-size: 25px;
   font-weight: 600;
   color: #fff;
+  transition: 0.3s;
 }
-#newsletter p {
-  font-size: 13px;
-  font-weight: 100;
+.newsletter h4:hover {
+  color: darkgrey;
 }
-#newsletter .form {
+.newsletter p {
+  font-size: 15px;
+  font-weight: 600;
+}
+.newsletter .form {
   display: flex;
   width: 40%;
 }
-#newsletter input {
-  height: 3.125rem;
-  padding: 0 1.25em;
 
+.newsletter input {
+  height: 2.125rem;
+  padding: 0 1.25em;
   font-size: 14px;
   width: 100%;
-  border: 1px solid green;
+  border: 1px solid trans;
   border-radius: 4px;
   outline: none;
-  border-top-right-radius: 0%;
-  border-bottom-right-radius: 0%;
 }
-#newsletter button {
+.signup {
+  display: flex;
+}
+
+.news-btn {
   white-space: nowrap;
-  border-bottom-right-radius: 0%;
-  border-top-right-radius: 0%;
 }
 /* end of newsletter */
 
@@ -288,7 +379,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 0px;
- 
 }
 .col {
   display: flex;
@@ -346,3 +436,84 @@ footer {
   margin-bottom: 17px;
 }
 /* end of footer */
+
+/* media query  for larger screen*/
+@media (max-width: 1000px) {
+  .feature-section {
+    padding: 40px 40px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1); /* x, y and radius */
+    padding: 80px 0 0 3px; /* top, right , bottom left */
+    transition: 0.3s;
+  }
+  #navbar.activee {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: black;
+    font-size: 27px;
+    padding-left: 20px;
+  }
+  #close-side {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: black;
+    font-size: 27px;
+    font-weight: 700;
+    padding-left: 40%;
+  }
+  #rem-bag {
+    display: none;
+  }
+
+  .hero {
+    height: 70vh;
+    padding: 0 80px;
+    /* background-position: top 30% right 30%; */
+  }
+  #banner .banner-shop {
+    height: 60vh;
+    min-width: 100%;
+    padding: 10 80px;
+  }
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 40vh;
+  }
+  .newsletter {
+    display: flex;
+  }
+  #section-footer {
+    min-width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+  min-width: 100%;
+}
+.copyright hr {
+  width: 750px;
+  
+}
+}
