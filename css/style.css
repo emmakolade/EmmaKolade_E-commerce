@@ -89,6 +89,19 @@ body {
   bottom: -3px;
   left: 40px;
 }
+#navbar li a.activ-e {
+  color: orangered;
+}
+
+#navbar li a:hover::after {
+  content: "";
+  width: 18%;
+  height: 1.5px;
+  background: orangered;
+  position: absolute;
+  bottom: -3px;
+  left: 40px;
+}
 #mobile {
   display: none;
   align-items: center;
@@ -210,24 +223,22 @@ body {
   margin-top: 15px;
   color: #414a4c;
   font-size: 30px;
-
 }
 
-.pagination{
+.pagination {
   text-decoration: none;
-  
+
   padding-top: 0;
   padding-bottom: 30px;
-  
+
   font-size: 700;
 
   text-align: center;
   font-size: 30px;
-
 }
-.pagination a i{
+.pagination a i {
   color: black;
-  
+
   padding: 0px 10px;
 }
 /*end of collections*/
@@ -438,7 +449,7 @@ footer {
 /* end of footer */
 
 /* media query  for larger screen*/
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .feature-section {
     padding: 40px 40px;
   }
@@ -510,10 +521,199 @@ footer {
     align-items: center;
   }
   footer {
-  min-width: 100%;
+    min-width: 100%;
+  }
+  .copyright hr {
+    width: 750px;
+  }
 }
-.copyright hr {
-  width: 750px;
-  
+
+/* media query smaller */
+@media (max-width: 477px) {
+  .feature-section {
+    padding: 40px 80px;
+  }
+  .col {
+    text-align: center;
+    padding-top: 10px;
+  }
+  footer {
+    min-width: 100%;
+  }
+  .copyright hr {
+    width: 400px;
+  }
+  /* product details */
+  #pro-details {
+    display: flex;
+    flex-direction: column;
+  }
+  #pro-details .small-pro-image {
+    display: flex;
+    min-width: 250px;
+  }
+  #main-img {
+    width: 100%;
+    min-width: 250px;
+  }
+  #pro-details .single-pro-details {
+    width: 100%;
+    /* padding-left: 50px; */
+  }
+  #pro-details .single-pro-details h4 {
+    font-size: 5px;
+    /* end of prodcut details */
+  }
 }
+
+/* end of media query smaller */
+
+/* productdetails */
+#pro-details {
+  display: flex;
 }
+#pro-details .main-pro-image {
+  width: 10%;
+  margin-right: 50px;
+}
+/* .small-pro-image {
+  display: flex;
+  justify-content: column;
+} */
+.small-pro-image-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.big-pro-image {
+  width: 70%;
+  margin-left: 20px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+#pro-details .single-pro-details {
+  margin-left: 30px;
+  width: 40%;
+}
+
+#pro-details .single-pro-details h4 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+#pro-details .single-pro-details h3 {
+  font-size: 16px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  color: darkgray;
+  font-weight: 600;
+}
+#pro-details .single-pro-details h5 {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+#pro-details .single-pro-details h6 {
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: darkgray;
+}
+#pro-details .single-pro-details select {
+  display: block;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+}
+#pro-details .single-pro-details input {
+  width: 16.6%;
+  height: 2.4%;
+}
+#pro-details .single-pro-details ul {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+/* cart page  */
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+#cart table img {
+  width: 100px;
+}
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+#cart table td:nth-child(2) {
+  width: 250px;
+  text-align: center;
+}
+#cart table td:nth-child(3) {
+  width: 100px;
+  text-align: center;
+}
+#cart table td:nth-child(4) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(4) input {
+  width: 50px;
+  padding: 10px 5px 10px 15px;
+}
+#cart table td:nth-child(5) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(6) {
+  width: 100px;
+  text-align: center;
+}
+#cart table thead {
+  border-bottom: 1px solid black;
+}
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+#cart {
+  width: 100%;
+}
+
+/* #cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+#order-sum{
+  margin: 0px;
+}
+#subtotal {
+  width: 30%;
+  margin-bottom: 30px;
+  /* border: 1px solid; */
+  padding: 30px;
+}
+#subtotal table {
+  /* border-collapse: collapse; */
+  width: 100%;
+  margin-bottom: 20px;
+}
+#subtotal table td {
+  width: 100%;
+  padding: 20px;
+}
+#subtotal h3 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+#subtotal input {
+  padding: 10px 20px;
+  /* outline: none; */
+  padding: 10px;
+  font-size: 14px;
+}
+/* end of cart page  */
